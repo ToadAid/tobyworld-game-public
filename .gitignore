@@ -1,0 +1,26 @@
+# Local playtest captures and scratch output
+tmp/
+.codegraph/
+lore/
+toadaid-tobyworld-deploy.sh
+
+# Dependency and build output
+node_modules/
+.release/
+dist/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and editor/OS files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~

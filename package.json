@@ -1,0 +1,15 @@
+{
+  "name": "tobyworld-paths-of-patience",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check app.js && node --check sw.js && node --check src/audio.mjs && node --check src/core.mjs && node --check src/deed-archive.mjs && node --check src/deed-sandbox.mjs && node --check src/dialogue.mjs && node --check src/feedback.mjs && node --check src/gamepad.mjs && node --check src/progress.mjs && node --check src/sandbox-audit.mjs && node --check src/stages.mjs && node --check tools/audit-deed-sandboxes.mjs && node --check tools/build-lore-index.mjs && node --check tools/build-owned-deeds.mjs && python3 -c \"compile(open('tools/build-deed-thumbnails.py',encoding='utf-8').read(),'tools/build-deed-thumbnails.py','exec'); compile(open('tools/build-stage-art.py',encoding='utf-8').read(),'tools/build-stage-art.py','exec')\"",
+    "test": "node --test tests/*.test.mjs",
+    "audit:sandboxes": "node tools/audit-deed-sandboxes.mjs",
+    "build:lore-index": "node tools/build-lore-index.mjs",
+    "build:owned-deeds": "node tools/build-owned-deeds.mjs",
+    "build:deed-thumbnails": "python3 tools/build-deed-thumbnails.py",
+    "build:stage-art": "python3 tools/build-stage-art.py"
+  }
+}
