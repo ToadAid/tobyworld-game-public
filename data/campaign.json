@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "title": "The World Is Slowly Awakening",
+  "subtitle": "A Path Through Twelve Doors",
+  "canonBoundary": "Deed numbers and five signs are canonical. Chapter titles, themes, mechanics, and narrative beats are game adaptations by Toadaid.",
+  "selectionPrinciple": "These twelve deeds form one meaningful path through Tobyworld. Unselected deeds remain distinct doors and are not lesser, duplicate, or absent from the world.",
+  "acts": [
+    {
+      "id": "learning-to-tend",
+      "title": "Act I — Learning to Tend",
+      "purpose": "Toby learns that awakening a land requires attention rather than conquest.",
+      "chapters": [
+        { "number": 1, "deed": "0715", "title": "Paths of Patience", "theme": "Patience", "status": "playable", "mechanicSeed": "Waystone route memory and Satoby guidance", "storyBeat": "Toby learns to stop, listen, tend, and Yield." },
+        { "number": 2, "deed": "0716", "title": "Frostveil Crossing", "theme": "Endurance", "status": "playable", "mechanicSeed": "Frozen crossings and narrow timing windows", "storyBeat": "The first lesson survives a harsher land." },
+        { "number": 3, "deed": "0717", "title": "Stillwater Dawn", "theme": "Quiet", "status": "playable", "mechanicSeed": "Reflections, stillness, and Hush quieting threats", "storyBeat": "Silence becomes a way of hearing the land." },
+        { "number": 4, "deed": "0718", "title": "Cloudwake Ascent", "theme": "Courage", "status": "playable", "mechanicSeed": "A divided Sunfield and OG's Sky Ward", "storyBeat": "Toby crosses the open sky and learns that courage can be sheltered." }
+      ]
+    },
+    {
+      "id": "scattered-signs",
+      "title": "Act II — The Scattered Signs",
+      "purpose": "Relics reveal that the awakened doors answer one another across Tobyworld.",
+      "chapters": [
+        { "number": 5, "deed": "0340", "title": "Garden of the Shard", "theme": "Growth", "status": "playable", "mechanicSeed": "Sporegrove paths spread and retract around an Ancient Rune", "storyBeat": "A Shard answers the four awakened Cores with a distant light." },
+        { "number": 6, "deed": "0378", "title": "The Ember Oath", "theme": "Resolve", "status": "playable", "mechanicSeed": "Emberreach heat cycles and rune-cooled safe paths", "storyBeat": "OG teaches that protection creates time to choose, not permission to rush." },
+        { "number": 7, "deed": "0118", "title": "The Box Beneath the Moon", "theme": "Memory", "status": "playable", "mechanicSeed": "Mossmere concealment and a Kiribako memory sequence", "storyBeat": "The Kiribako preserves an echo from a door Toby has not entered." },
+        { "number": 8, "deed": "0182", "title": "The Meadow Gate", "theme": "Return", "status": "playable", "mechanicSeed": "Open Meadow sightlines and Gate Key route changes", "storyBeat": "A simple field reveals the first key toward The Pond." }
+      ]
+    },
+    {
+      "id": "the-way-home",
+      "title": "Act III — The Way Home",
+      "purpose": "The route bends toward The Pond, where the path is revealed as one thread in a world of doors.",
+      "chapters": [
+        { "number": 9, "deed": "0887", "title": "The Map in the Frost", "theme": "Perspective", "status": "playable", "mechanicSeed": "Cloudwake Frostveil navigation guided by the Lore Map", "storyBeat": "The Lore Map shows no center—only connected doors." },
+        { "number": 10, "deed": "1091", "title": "The Key Below Stillwater", "theme": "Trust", "status": "playable", "mechanicSeed": "Reflected routes reveal a submerged Gate Key", "storyBeat": "Hush asks Toby to trust what can be seen only while still." },
+        { "number": 11, "deed": "0969", "title": "At the Pond's Threshold", "theme": "Belonging", "status": "playable", "mechanicSeed": "Pond rings open through patient breathing; Satoby's welcome opens them permanently", "storyBeat": "The key opens a threshold, not ownership of what waits beyond." },
+        { "number": 12, "deed": "0094", "title": "The Pond Remembers", "theme": "Connection", "status": "playable", "mechanicSeed": "The Wayfinder reveals three Door Echoes awakened through still, held Patience", "storyBeat": "The final Wayfinder reveals that every deed remains its own door and every land belongs to Tobyworld." }
+      ]
+    }
+  ]
+}

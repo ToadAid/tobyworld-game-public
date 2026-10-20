@@ -1,0 +1,1557 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Local owned-deed source manifest for Tobyworld game development",
+  "provenanceRule": "Canonical metadata defines the five signs. Curated original and imagined images remain separate development references.",
+  "collectionContext": {
+    "reportedOwnedDeedCount": 80,
+    "locallyPairedDeedCount": 34,
+    "locallyAvailableImaginedVariantCount": 5
+  },
+  "sourceInputs": {
+    "curated": "TOBYWORLD_CURATED_LANDS",
+    "canonicalArchive": "TOBYWORLD_CANONICAL_ARCHIVE"
+  },
+  "deeds": [
+    {
+      "id": "0094",
+      "name": "Lore Land Deed #94",
+      "signs": {
+        "Background": "Verdant Veil",
+        "Land": "The Pond",
+        "Core": "Patience",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0094.json",
+        "archiveImage": {
+          "file": "0094.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "4a70fb101632f9014a816252fd6b8c2e702c7d2b21c1a2a92e28ff9aafe31211"
+        },
+        "ipfsImage": "ipfs://QmcR39nWoXBWKZdx7zhdLjWR7SkuqxvuXyB5b8erQAL2Po/94.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0094.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "d6fec6ad7a372332bffa7925c6e80174eecb47288264e9f5b0a2ee3284a0c4d1"
+        },
+        "selectedImagined": "imagined-0094.png",
+        "imagined": [
+          {
+            "file": "imagined-0094.png",
+            "role": "toadaid-imagined-world",
+            "width": 1280,
+            "height": 1280,
+            "sha256": "602cb13322ff65ff60e567ab7acf82e401556e68e1ac86a88e9b384a14cd2aa3",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0118",
+      "name": "Lore Land Deed #118",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Mossmere",
+        "Core": "Taboshi",
+        "Relic": "Kiribako",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0118.json",
+        "archiveImage": {
+          "file": "0118.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "8287c678a30caf474c1911ed6e8b816414cb77c8d1140cf375225fc89c404ac3"
+        },
+        "ipfsImage": "ipfs://QmW8SoRNoEJ9cDiPtbzmBPmSqg9sPMuwHGC4rQCdh2sCpj/118.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0118.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "b0717fa88775e1cb00a281dcddcd407f153d0917af72462dacb119ee1428ed34"
+        },
+        "selectedImagined": "imagined-0118.png",
+        "imagined": [
+          {
+            "file": "imagined-0118.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "699d382b0f7aced745c4e0a5ffa3e40f2ca21188b18d754416ce912ca4e62f9a",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0182",
+      "name": "Lore Land Deed #182",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Meadow",
+        "Core": "Patience",
+        "Relic": "Gate Key",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0182.json",
+        "archiveImage": {
+          "file": "0182.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e1f2711678549d5cd204d8191b439bc5ad2f90700d21c4f495079d13b5b4b2fe"
+        },
+        "ipfsImage": "ipfs://QmRQS3pVs6ysKxGu52NEBxMyViQif69SawDM6YTX4GLEho/182.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0182.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "97c2179b4e67e1ca08b52666b9bafec2aa93634c961555d2d6cd3d95042b5931"
+        },
+        "selectedImagined": "imagined-0182.png",
+        "imagined": [
+          {
+            "file": "imagined-0182-v1.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "32a3576d4673c2a942986d31cf282508b86fdeeb9bd39154df3d4f44d9a051d2",
+            "variant": "v1",
+            "selected": false
+          },
+          {
+            "file": "imagined-0182.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "a85d416a3a0c81ca1407c53cc9108b9bebc2ced63f5cdbe29b7d87c86b7a922f",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0191",
+      "name": "Lore Land Deed #191",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Waystones",
+        "Core": "Rootbound",
+        "Relic": "Kiribako",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0191.json",
+        "archiveImage": {
+          "file": "0191.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "6df86616e18331b40dc3db2748761ac25b11b53f7c8257be593ea3376e4d5f11"
+        },
+        "ipfsImage": "ipfs://QmRQS3pVs6ysKxGu52NEBxMyViQif69SawDM6YTX4GLEho/191.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0191.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "ce4442c5a66c600d05d0fdbe52a86a084ade0a046e854df8e2f098ad4ffa6e2d"
+        },
+        "selectedImagined": "imagined-0191.png",
+        "imagined": [
+          {
+            "file": "imagined-0191.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "c61f67f996d421b9739279bf18e59c652acada4045435eca494c027dc5f29c4a",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0334",
+      "name": "Lore Land Deed #334",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Sunfield",
+        "Core": "Shard",
+        "Relic": "Ancient Rune",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0334.json",
+        "archiveImage": {
+          "file": "0334.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "8908dee39e89402330dc3d35e7dce51b9fc84447b44ccdaa55af69359bdd7210"
+        },
+        "ipfsImage": "ipfs://QmP7TNcEZzMA68KeWY7vyTWKYipgfiZSz3Ar3WWvkupNAN/334.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0334.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "9807b1dea6f8697e8f5dec56551e525318a1cea8cea3f607798cbd0897d6a300"
+        },
+        "selectedImagined": "imagined-0334.png",
+        "imagined": [
+          {
+            "file": "imagined-0334.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "caa7a4d113dc7d3866cfd403c41d40ceb6dde054d7edd9d44181a1289368540e",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0339",
+      "name": "Lore Land Deed #339",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Stillwater",
+        "Core": "Rootbound",
+        "Relic": "Ancient Rune",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0339.json",
+        "archiveImage": {
+          "file": "0339.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "9081bb07781fbdb4ca8554256a3de4e5466cc24d5499faee8e4fcc420eded9ea"
+        },
+        "ipfsImage": "ipfs://QmUoMNTgSphKNPihG6FBtSfWmPBB8Nv6zLVgnH4KVzkotq/339.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0339.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "22bbda8f4523dc0e53f0e01633964df39ec8161bad4429c9a828e79cbc2c9275"
+        },
+        "selectedImagined": "imagined-0339.png",
+        "imagined": [
+          {
+            "file": "imagined-0339.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "3fd4b7d093dea91c5043b2eb75b005139c2dc7fa24865ad714034aaf059fd4e4",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0340",
+      "name": "Lore Land Deed #340",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Sporegrove",
+        "Core": "Shard",
+        "Relic": "Ancient Rune",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0340.json",
+        "archiveImage": {
+          "file": "0340.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "e1cfb900117a897f6cc61c59144c5c248c1c96c497f49125b8ae02c49663cb08"
+        },
+        "ipfsImage": "ipfs://QmUoMNTgSphKNPihG6FBtSfWmPBB8Nv6zLVgnH4KVzkotq/340.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0340.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "a0c28797580e01e8d9f3818878dbf7968e65a38189e376d5d9f1e09391fdead8"
+        },
+        "selectedImagined": "imagined-0340.png",
+        "imagined": [
+          {
+            "file": "imagined-0340.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "4b038474314b7858101be8b92db82be449dec6784cb03db9ae3646775575acf6",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0378",
+      "name": "Lore Land Deed #378",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Emberreach",
+        "Core": "Sato",
+        "Relic": "Ancient Rune",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0378.json",
+        "archiveImage": {
+          "file": "0378.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "9f982d48b06e415eff091f92fc20411a3ae78f4a4565fd99f4efd03c97023633"
+        },
+        "ipfsImage": "ipfs://QmUoMNTgSphKNPihG6FBtSfWmPBB8Nv6zLVgnH4KVzkotq/378.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0378.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "59c2c60c5396aa9fec47e9279a2cbce4c98ffc5e0f39805dd11990499f089a84"
+        },
+        "selectedImagined": "imagined-0378.png",
+        "imagined": [
+          {
+            "file": "imagined-0378.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "001ed99481339815e2c8687c8f24b41f8860176a9398119973c9b9110dccc377",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0380",
+      "name": "Lore Land Deed #380",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Sunfield",
+        "Core": "Sato",
+        "Relic": "Seed Vessel",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0380.json",
+        "archiveImage": {
+          "file": "0380.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "c135b3401716448942740ff0c4255b456fa7287eebc93925521ad6d1ee3af3d3"
+        },
+        "ipfsImage": "ipfs://QmUoMNTgSphKNPihG6FBtSfWmPBB8Nv6zLVgnH4KVzkotq/380.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0380.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "bc86da13ae5772a07fa27b898cad0c42778ccd4ded93d67f7623691c798d9577"
+        },
+        "selectedImagined": "imagined-0380.png",
+        "imagined": [
+          {
+            "file": "imagined-0380.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "e20868ec307012c948fce6d31e0b060d39ae65395bc813482babe5e8796929d7",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0383",
+      "name": "Lore Land Deed #383",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Meadow",
+        "Core": "Eclipse",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0383.json",
+        "archiveImage": {
+          "file": "0383.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "8f1ffd4d7350c41df9c40d0a80f8be3274f0f323546fcd4188a7308d2c0df467"
+        },
+        "ipfsImage": "ipfs://QmUoMNTgSphKNPihG6FBtSfWmPBB8Nv6zLVgnH4KVzkotq/383.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0383.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "1ad7bdb867967fbe7ca7d6057013769afcf6c8fb001ffd129cd628cd2662b4df"
+        },
+        "selectedImagined": "imagined-0383.png",
+        "imagined": [
+          {
+            "file": "imagined-0383.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "e1b97b1b6ced19dd1014af25ae67b53a58e26fcee40bf2b3399dcda6e4392b4f",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0699",
+      "name": "Lore Land Deed #699",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Frostveil",
+        "Core": "Rootbound",
+        "Relic": "Seed Vessel",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0699.json",
+        "archiveImage": {
+          "file": "0699.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "a94c2b926d0213b1d98c03b6648ec8175931d649d07acb6759ea86627e635e4c"
+        },
+        "ipfsImage": "ipfs://QmXRcW5awR9mJfF3zq6KQz2n56tMheaZXXSj5AwfEv15yZ/699.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0699.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "9d824f24c1a79f81ff6cb1aabbaad07ac01edc53ac1a18d2e8859d98f69dfd66"
+        },
+        "selectedImagined": "imagined-0699.png",
+        "imagined": [
+          {
+            "file": "imagined-0699.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "0f863daac40c603e67e1389f5930f6aaa43e96a9c43dad92c30aa46316c86ce6",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0700",
+      "name": "Lore Land Deed #700",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Mossmere",
+        "Core": "Taboshi",
+        "Relic": "Seed Vessel",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0700.json",
+        "archiveImage": {
+          "file": "0700.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "12d84827742d50fd876fadec7cc791d361edbf80ae20138ba42c03f7df2542be"
+        },
+        "ipfsImage": "ipfs://QmXRcW5awR9mJfF3zq6KQz2n56tMheaZXXSj5AwfEv15yZ/700.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0700.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "b91da8bbb743f90c53e1217571082357c13b8e047337fe0f1732ffa7c48a705f"
+        },
+        "selectedImagined": "imagined-0700.png",
+        "imagined": [
+          {
+            "file": "imagined-0700.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "3b9147db662612ff1da0b11b202f59d205f44d2d9abca6920b68147df33ecc85",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0715",
+      "name": "Lore Land Deed #715",
+      "signs": {
+        "Background": "Verdant Veil",
+        "Land": "Waystones",
+        "Core": "Rootbound",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0715.json",
+        "archiveImage": {
+          "file": "0715.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "805a0a2e9fa37e3465bbf639a4b911bd0b1295118fcef3c4c2cc20d41e85c1d1"
+        },
+        "ipfsImage": "ipfs://QmXRcW5awR9mJfF3zq6KQz2n56tMheaZXXSj5AwfEv15yZ/715.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0715.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "e230c28a8e6de4c430b1b2a12f4c82041ff502b0a2eb83d34a07140c773ff951"
+        },
+        "selectedImagined": "imagined-0715.png",
+        "imagined": [
+          {
+            "file": "imagined-0715.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "4ceb0f1c1208da1ad41f888a1d6a599a9714c271cfec9d551203d00338eebc84",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0716",
+      "name": "Lore Land Deed #716",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Frostveil",
+        "Core": "Sato",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0716.json",
+        "archiveImage": {
+          "file": "0716.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "acf745e145a063785afdf40b42bd0fb03eee3a7488e06ac59a89d4f20920ec90"
+        },
+        "ipfsImage": "ipfs://QmXRcW5awR9mJfF3zq6KQz2n56tMheaZXXSj5AwfEv15yZ/716.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0716.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "381775d1850ba9fd15d33366ada807157083284f2ff6614b657285cdb3078878"
+        },
+        "selectedImagined": "imagined-0716.png",
+        "imagined": [
+          {
+            "file": "imagined-0716.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "c08a8ff6327ebe36f5d2abc325b843b03cb2652c71382103995a3ce080bca0bf",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0717",
+      "name": "Lore Land Deed #717",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Stillwater",
+        "Core": "Taboshi",
+        "Relic": "Seed Vessel",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0717.json",
+        "archiveImage": {
+          "file": "0717.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "3d57c0bd5f1aea505359f3904e855b82e5000ed8ba43ce2ddb9f1ec13f596029"
+        },
+        "ipfsImage": "ipfs://QmXRcW5awR9mJfF3zq6KQz2n56tMheaZXXSj5AwfEv15yZ/717.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0717.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "eaa2247bc401bbbce0d0f42d2e826b9ea46dd7fbf06ed0feb3df7a1fb7f2060d"
+        },
+        "selectedImagined": "imagined-0717.png",
+        "imagined": [
+          {
+            "file": "imagined-0717-v1.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "1d9a561d3d82be570a3b05744952161ac9203d1110e797de7d0ffb8faa1b017e",
+            "variant": "v1",
+            "selected": false
+          },
+          {
+            "file": "imagined-0717.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "fa46fb4356285cc7920e79198031d90100f4b464a9f229080eff6c7f6a65f656",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0718",
+      "name": "Lore Land Deed #718",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Sunfield",
+        "Core": "Eclipse",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0718.json",
+        "archiveImage": {
+          "file": "0718.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "642952f23415c0b8d574922f721db41471d2c790e136a99fbbd3241ddcb61301"
+        },
+        "ipfsImage": "ipfs://QmdwyKeJYJ8PbqcW9TQ3nCQz5vKFk8jip5U9YARv5nKy1e/718.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0718.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "9e7403e4973cefd8b0f438a04f5d691db9380334b8fb12f5c8109484d66888ee"
+        },
+        "selectedImagined": "imagined-0718.png",
+        "imagined": [
+          {
+            "file": "imagined-0718.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "ac85e462a8a84e6575004b1f7cbbc42d83d1706146fc474b5a3c6d6ff50179d5",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0719",
+      "name": "Lore Land Deed #719",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Mossmere",
+        "Core": "Patience",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0719.json",
+        "archiveImage": {
+          "file": "0719.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "fc44b1190ee02f233ef600be93e1bd3f3a1197d6c17966c6b248d3b2d7820727"
+        },
+        "ipfsImage": "ipfs://QmdwyKeJYJ8PbqcW9TQ3nCQz5vKFk8jip5U9YARv5nKy1e/719.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0719.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "e87e18a10b4758f28c7854538c7404f21f000a4a82597be548b19e61be62e635"
+        },
+        "selectedImagined": "imagined-0719.png",
+        "imagined": [
+          {
+            "file": "imagined-0719.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "7ad544dd253319abcf3ba70d84f3e6fd45621c63d0a5fd15223c0ff8d289a91f",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0882",
+      "name": "Lore Land Deed #882",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Emberreach",
+        "Core": "Rootbound",
+        "Relic": "Kiribako",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0882.json",
+        "archiveImage": {
+          "file": "0882.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "92b18d6728d944ab900a3d6a5bb4a7816be1dda3005f7df5e1703f757eaaaa32"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/882.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0882.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "274b286bfae955a7298966f5796d4ac30ef5410796fe0c976299cc7345838a13"
+        },
+        "selectedImagined": "imagined-0882.png",
+        "imagined": [
+          {
+            "file": "imagined-0882.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "353458db47b05c8c66b05ec6b42d3a4ae7f398e4e942718f796d3517444c334d",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0883",
+      "name": "Lore Land Deed #883",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Waystones",
+        "Core": "Rootbound",
+        "Relic": "Ancient Rune",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0883.json",
+        "archiveImage": {
+          "file": "0883.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "49f209874f16c17d76fee7ea7085125c8951f19b4e0fe463a1470f3b144891e7"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/883.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0883.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "a2a64ca46665a6b4a85a6f703da389ed0fca224f2bdce9ba7f8ca5d5e292e025"
+        },
+        "selectedImagined": "imagined-0883.png",
+        "imagined": [
+          {
+            "file": "imagined-0883.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "19e0cae7cac301433934c7a2368c0fc889bd3c64126502bc00ff47b7f7ab0e65",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0884",
+      "name": "Lore Land Deed #884",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Waystones",
+        "Core": "Sato",
+        "Relic": "Seed Vessel",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "0884.json",
+        "archiveImage": {
+          "file": "0884.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "f0d487a70cc6c11fc8aec171af0d9ac1ba72c13bc4058d972fde3ba1b07b12fd"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/884.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0884.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "995f383602249e6ab20283cfd51564c5f7dd53809cb9f28d312c9a968c8975cd"
+        },
+        "selectedImagined": "imagined-0884.png",
+        "imagined": [
+          {
+            "file": "imagined-0884.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "90e65f0688bf734896afe5b40c194c5fa3c51448f7ff46cb8c9c360db25f2ab3",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0885",
+      "name": "Lore Land Deed #885",
+      "signs": {
+        "Background": "Verdant Veil",
+        "Land": "Meadow",
+        "Core": "Eclipse",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0885.json",
+        "archiveImage": {
+          "file": "0885.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "ad46d7d06df461bd9b81cfed756ef1f1fadf2ac168e34557a614c38582aa0897"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/885.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0885.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "99310696a533bbc9751ea082a283ee4e04ed8b48ef94b2a5bac3e4b4535fd58a"
+        },
+        "selectedImagined": "imagined-0885.png",
+        "imagined": [
+          {
+            "file": "imagined-0885.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "be1e6e2ef2c744fd71484bef513308932d0d8ca22bb73b112c14ee04c4616560",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0886",
+      "name": "Lore Land Deed #886",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Sporegrove",
+        "Core": "Eclipse",
+        "Relic": "Kiribako",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0886.json",
+        "archiveImage": {
+          "file": "0886.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "71d1c3d1c2f5e595cbb50c2284f3afa759cbe547b94b378043672afd08b2e27a"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/886.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0886.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "4d33de333e96bd999ac71569e530b159055af8dd2112d67e14125248777d7999"
+        },
+        "selectedImagined": "imagined-0886.png",
+        "imagined": [
+          {
+            "file": "imagined-0886.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "b6cd71ce8a00aa443d9275a391f9f80c694b073b316fd0c4d26c185ccba6bf1a",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0887",
+      "name": "Lore Land Deed #887",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Frostveil",
+        "Core": "Shard",
+        "Relic": "Lore Map",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0887.json",
+        "archiveImage": {
+          "file": "0887.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "ce5b7af74cba68c1aa324bd090daaa5187fae464c4d6720ff1721208a12b94e3"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/887.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0887.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "a12d1682959bc66a7d4dd075d26089267a785a49a8634828248282fc0c4d8c39"
+        },
+        "selectedImagined": "imagined-0887.png",
+        "imagined": [
+          {
+            "file": "imagined-0887-v1.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "c08a8ff6327ebe36f5d2abc325b843b03cb2652c71382103995a3ce080bca0bf",
+            "variant": "v1",
+            "selected": false
+          },
+          {
+            "file": "imagined-0887.png",
+            "role": "toadaid-imagined-world",
+            "width": 1280,
+            "height": 1280,
+            "sha256": "42489ea7bc76dde75e0f1e58f41bea0e6f3286ccae7cf503916e581fb7d28964",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0888",
+      "name": "Lore Land Deed #888",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Mossmere",
+        "Core": "Sato",
+        "Relic": "Ancient Rune",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0888.json",
+        "archiveImage": {
+          "file": "0888.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "d22cb276f6cd91074e4ba459ab0189d71fbe877697480e8ffc8c8228d9af74b5"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/888.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0888.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "c6702866e3b2d2bc9b6d4f15bcb6898ac9a88ed60c8870eded155c1a4cbdce79"
+        },
+        "selectedImagined": "imagined-0888.png",
+        "imagined": [
+          {
+            "file": "imagined-0888.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "5a52ad2b2571391fd9ea3a2439d1463955af2fc369ff31c381d49bc50060737a",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0889",
+      "name": "Lore Land Deed #889",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Emberreach",
+        "Core": "Eclipse",
+        "Relic": "Seed Vessel",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0889.json",
+        "archiveImage": {
+          "file": "0889.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "556ae72de9049b97a1bf7d3e41785d4bcb667deb423c7b98493c55dbcdfb6563"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/889.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0889.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "3dff4a3e5f89e496354ba2cadbc6b4b6db68f8e86fe17a7a3826e5c10f11e7b3"
+        },
+        "selectedImagined": "imagined-0889.png",
+        "imagined": [
+          {
+            "file": "imagined-0889.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "5b197a236fbe223fa850a57ae4c8937310cae0d632761ad5a964b49ab6e0e356",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0890",
+      "name": "Lore Land Deed #890",
+      "signs": {
+        "Background": "Verdant Veil",
+        "Land": "The Pond",
+        "Core": "Patience",
+        "Relic": "Kiribako",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0890.json",
+        "archiveImage": {
+          "file": "0890.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "a1098b1090f009d0a1c11b34fbf654d62d2a1c7c4a269973cc41afe55576c831"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/890.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0890.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "bb3b411a50a642cdc773f08158ac2d7da58a14c5a95cbc61847bb45c87786937"
+        },
+        "selectedImagined": "imagined-0890.png",
+        "imagined": [
+          {
+            "file": "imagined-0890-v1.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "1fab278a26af1e96d16af4365f9166b2442e44c99c654186f80a6a3571229f68",
+            "variant": "v1",
+            "selected": false
+          },
+          {
+            "file": "imagined-0890-v2.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "462c4d01906c25c1d20f006baee002a5fed429056a2869d5fee5716e3a96b917",
+            "variant": "v2",
+            "selected": false
+          },
+          {
+            "file": "imagined-0890.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "e6be7adf0429b4fc9f374d4141876130faf355e62bfffc367ebe5e6b4989efcd",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0891",
+      "name": "Lore Land Deed #891",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Waystones",
+        "Core": "Shard",
+        "Relic": "Kiribako",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "0891.json",
+        "archiveImage": {
+          "file": "0891.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7772ee8bbc5d020a1c03848963628627be4857a1b8eb00b07eae1ddb4b2c485a"
+        },
+        "ipfsImage": "ipfs://QmakA8iqbjQVeiZh98vJQQCgdMy2E9qm9UHh9cMGVuWBMj/891.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0891.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "c42f1d0f606abfdbe304a42aa2c9b60281d22ffd0ab3c6cff81960979cb1c616"
+        },
+        "selectedImagined": "imagined-0891.png",
+        "imagined": [
+          {
+            "file": "imagined-0891.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "94325737a9d69f014ba7f00d64a20048be6f370cb81d774dc4d25b363c5ab294",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "0969",
+      "name": "Lore Land Deed #969",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "The Pond",
+        "Core": "Patience",
+        "Relic": "Gate Key",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "0969.json",
+        "archiveImage": {
+          "file": "0969.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "78eb4b55ccea0855c870ffc30d3d226d0a666267111eb099d2c19a8b28f0549b"
+        },
+        "ipfsImage": "ipfs://QmVjUQ48JP9N7sBiYC4HGEsHLxSXwxMnqgxyCiYtgZgzQD/969.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-0969.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "bebc55c2e62a8b6a4802f7a06cb49247cd91c41390f72ff985272d847c8ab0a9"
+        },
+        "selectedImagined": "imagined-0969.png",
+        "imagined": [
+          {
+            "file": "imagined-0969.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "b5ed229cd8578f0bcdf02316e76665de417865446903969b6b6cff3ff6f73ed9",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1008",
+      "name": "Lore Land Deed #1008",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Mossmere",
+        "Core": "Eclipse",
+        "Relic": "Seed Vessel",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "1008.json",
+        "archiveImage": {
+          "file": "1008.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "7bcdd11cda6f391acfb95489ac33dcdfefaa8fe07822effb4df745243428535d"
+        },
+        "ipfsImage": "ipfs://QmY7qiRXYtAxcRp9W6J2arofbmWJvhWN31QqmTxBjMFhZN/1008.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1008.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "1e1339b7fda1d00faf4f0b28e6844d385bdee3d41f93f2592659a5c62814c55a"
+        },
+        "selectedImagined": "imagined-1008.png",
+        "imagined": [
+          {
+            "file": "imagined-1008.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "9ba4e60992024439cd55b982a8dd78ccef66c3bd17778e2f4e68c6c2f062d633",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1009",
+      "name": "Lore Land Deed #1009",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "The Pond",
+        "Core": "Rootbound",
+        "Relic": "Wayfinder Compass",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "1009.json",
+        "archiveImage": {
+          "file": "1009.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "10951f7d03be98245105c7ead44ba72e2a160514a06223301a138e4805908472"
+        },
+        "ipfsImage": "ipfs://QmY7qiRXYtAxcRp9W6J2arofbmWJvhWN31QqmTxBjMFhZN/1009.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1009.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "53563ea7ea6874949b0e0444cff17404a9eb04ead9d4a2e5aba49804c4f0bc47"
+        },
+        "selectedImagined": "imagined-1009.png",
+        "imagined": [
+          {
+            "file": "imagined-1009.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "ad66e5485a07253fe3505f7266a1e36f0cfb3bd9c7ed94d1801378d557e30e5e",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1010",
+      "name": "Lore Land Deed #1010",
+      "signs": {
+        "Background": "Violet Dusk",
+        "Land": "Meadow",
+        "Core": "Sato",
+        "Relic": "Gate Key",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "1010.json",
+        "archiveImage": {
+          "file": "1010.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "6d0b9aa81e637965e9581348d66473e5b97d234ec06caf29fd2463b92cb55974"
+        },
+        "ipfsImage": "ipfs://QmY7qiRXYtAxcRp9W6J2arofbmWJvhWN31QqmTxBjMFhZN/1010.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1010.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "25de520798f7137ed8d13ec1ef3e193d70a831c1704f305777dcd94aa82b5afd"
+        },
+        "selectedImagined": "imagined-1010.png",
+        "imagined": [
+          {
+            "file": "imagined-1010.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "eb577ce6d8db8278e4e42feea0c2bc52112c180f12aa958847c9f353944b838b",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1091",
+      "name": "Lore Land Deed #1091",
+      "signs": {
+        "Background": "Verdant Veil",
+        "Land": "Stillwater",
+        "Core": "Taboshi",
+        "Relic": "Gate Key",
+        "Keeper": "Hush"
+      },
+      "canonical": {
+        "metadataFile": "1091.json",
+        "archiveImage": {
+          "file": "1091.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "46a232a227f3ee787fce80588a7d8b3cc6da6677f89a2b7c4c3a426af3c67d4c"
+        },
+        "ipfsImage": "ipfs://QmdQ1aMhwTweczjBG9DKBkfLP9TUvX8bituTNE67vN7vpo/1091.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1091.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "a3d697af1505f00de50220792fd90dffb1d935bfe3b3165f11084eff89b69717"
+        },
+        "selectedImagined": "imagined-1091.png",
+        "imagined": [
+          {
+            "file": "imagined-1091.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "cb403eb88524798f08932e34b8a590ebdeab827b3d16b40506dfb4c5166b5f46",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1132",
+      "name": "Lore Land Deed #1132",
+      "signs": {
+        "Background": "Gilded Dawn",
+        "Land": "Frostveil",
+        "Core": "Taboshi",
+        "Relic": "Gate Key",
+        "Keeper": "Satoby"
+      },
+      "canonical": {
+        "metadataFile": "1132.json",
+        "archiveImage": {
+          "file": "1132.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "354c377b2aa30fe59781b033728056d0cee380342da9303521c1f263b852c253"
+        },
+        "ipfsImage": "ipfs://QmZXuwtE7E7qGcutTfCe1zrr48JcH7g34DdoDr3XWUAFPV/1132.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1132.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "45a77b56a51d109432f4c7bd23e6afdacee94c24572b5512d6b753f017ced992"
+        },
+        "selectedImagined": "imagined-1132.png",
+        "imagined": [
+          {
+            "file": "imagined-1132.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "efeef10af5bb2fb2b75f3906b533e8f9cf37777d9a8caf4c72f18d7cc0be0c85",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "1211",
+      "name": "Lore Land Deed #1211",
+      "signs": {
+        "Background": "Cloudwake",
+        "Land": "Frostveil",
+        "Core": "Rootbound",
+        "Relic": "Seed Vessel",
+        "Keeper": "OG"
+      },
+      "canonical": {
+        "metadataFile": "1211.json",
+        "archiveImage": {
+          "file": "1211.png",
+          "role": "canonical-archive-image",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "92d370844db29ff74563a23d030320141651a07fee61f2122d56cb1993e84254"
+        },
+        "ipfsImage": "ipfs://QmV5v5MTAsz8FTU8BHSGkwEu58686ZzUCe1Tx8Kx62s8WH/1211.png",
+        "externalUrl": "https://tobyworld.app/twpot/"
+      },
+      "curated": {
+        "original": {
+          "file": "original-1211.png",
+          "role": "owned-original-reference",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "1dd065472ffc8246fcfc7159dc885fc6b16f497a41c4a006387039d8f74408e9"
+        },
+        "selectedImagined": "imagined-1211.png",
+        "imagined": [
+          {
+            "file": "imagined-1211.png",
+            "role": "toadaid-imagined-world",
+            "width": 1254,
+            "height": 1254,
+            "sha256": "7177dd2f8620b7d401a728c0865a02045cf098dd0a17c85c895eda4b096d16cf",
+            "variant": "base",
+            "selected": true
+          }
+        ]
+      }
+    }
+  ]
+}
