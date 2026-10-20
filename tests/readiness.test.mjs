@@ -27,6 +27,7 @@ test("the clean edition contains no canonical asset formats or nested Git data",
     const entries = await readdir(directory, { withFileTypes: true });
     const names = [];
     for (const entry of entries) {
+      if (!prefix && entry.name === ".git") continue;
       const relative = join(prefix, entry.name); names.push(relative);
       if (entry.isDirectory()) names.push(...await walk(join(directory, entry.name), relative));
     }
