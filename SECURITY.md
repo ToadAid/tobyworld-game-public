@@ -8,7 +8,7 @@ Security fixes target the current production version at <https://tobyworld-game.
 
 Please do **not** open a public issue, discussion, or pull request containing vulnerability details, credentials, private data, or a working exploit.
 
-The preferred intake is GitHub private vulnerability reporting through this repository's **Security → Report a vulnerability** action, if the feature is enabled. Its availability has not been verified for this private staging repository; verification and enablement are release blockers. Until then, use an established private maintainer channel to request secure reporting instructions. Until it is enabled, contact a ToadAid maintainer through an already established private channel and ask for a secure reporting route before sending technical details.
+To report a vulnerability, first check this repository's **Security → Report a vulnerability** action for a private reporting form. If it is unavailable, contact a ToadAid maintainer through an already established private channel to arrange secure disclosure. Do not post exploit details publicly.
 
 Include, once a private channel is confirmed:
 
