@@ -6,7 +6,7 @@ Automated route audit command:
 npm run audit:sandboxes
 ```
 
-For same-computer tests use `python3 -m http.server 7777 --bind 127.0.0.1`. For physical-phone tests on a **trusted LAN only**, bind explicitly to Dell's LAN address using `python3 -m http.server 7777 --bind <DELL_LAN_IP>` and visit `http://<DELL_LAN_IP>:7777/` from the phone. Do not expose this private asset bundle to the public Internet. A phone cannot reach the Dell server through `localhost`.
+For same-computer tests use `python3 -m http.server 7777 --bind 127.0.0.1`. For physical-phone tests on a **trusted LAN only**, bind explicitly to Dell's LAN address using `python3 -m http.server 7777 --bind <DELL_LAN_IP>` and visit `http://<DELL_LAN_IP>:7777/` from the phone. Do not expose the temporary Python test server to the public Internet; it has no production server hardening. A phone cannot reach the Dell server through `localhost`.
 
 ## Representative sandbox matrix
 

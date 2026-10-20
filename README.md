@@ -6,9 +6,9 @@ This repository contains the **real full-game browser runtime**, including the
 12-world campaign, Lore Land explorer, and production game assets. It is
 **not** the earlier three-world sample.
 
-## Play locally (authorized reviewers)
+## Play locally
 
-This repository is currently private. Clone it using an account with access:
+This repository is publicly available. Clone it and serve the browser game with Python 3:
 
 ```bash
 git clone https://github.com/ToadAid/tobyworld-game-public.git
@@ -52,21 +52,16 @@ Test routes: `?test=1` for the twelve stages, `?test=1&deed=715` for a stage, `?
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), [SECURITY.md](SECURITY.md), [CAMPAIGN_STORY.md](CAMPAIGN_STORY.md), [COMMUNITY_ONBOARDING_P1.md](COMMUNITY_ONBOARDING_P1.md), and [PHYSICAL_DEVICE_QA.md](PHYSICAL_DEVICE_QA.md).
 
-## License boundaries
+## Licenses and rights
 
-The original source repository's [MIT LICENSE](LICENSE) is included for eligible ToadAid-owned game code and code-oriented documentation, **subject to confirmation of contributor authority and owner approval**. It does not grant permission to redistribute Tobyworld characters, lore, canonical images/metadata, Keeper art, imagined artwork, derivatives, trademarks, or any third-party materials. See [ASSET_LICENSE.md](ASSET_LICENSE.md).
+**The repository is public**, and ToadAid's eligible original game source code and code-oriented documentation are provided under the [MIT License](LICENSE). You can inspect, run, study, fork, and contribute to the code under its applicable terms.
 
-## Release status — PRIVATE, NOT YET CLEARED FOR PUBLICATION
+**Artwork and lore are different.** Tobyworld characters and names, canonical Lore Land Deed images and descriptions, Keeper artwork, imagined landscapes, and related third-party content are **not automatically licensed under MIT** just because their files are visible in a public repository. Copyright and trademark rights remain with their respective owners; obtain permission or verify separate license terms before reusing those materials.
 
-**DO NOT MAKE THIS REPOSITORY PUBLIC YET.** Canonical deed imagery and metadata,
-character art, imagined Lore Land artwork, derived imagery, audio, and other
-associated intellectual property have **not been cleared for public
-redistribution by this private technical copy**. Original rights holders
-retain their rights; no open-source license is granted to these assets here.
-Public NFT availability, Base onchain metadata, and IPFS retrievability do
-not by themselves establish permission to redistribute copyrighted assets.
+See [ASSET_LICENSE.md](ASSET_LICENSE.md) for the asset inventory and [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance. This public game is a ToadAid community adaptation and does not claim official Tobyworld or Toadgod endorsement.
 
-The private production Git history was not imported; production Vercel remains
-unchanged. Before making any branch or history public, complete artwork and
-metadata rights review, secret/history audit, interactive browser/mobile checks,
-and explicit human publication approval. See [PUBLIC_RELEASE_CHECKLIST.md](PUBLIC_RELEASE_CHECKLIST.md) and [PRIVATE_RELEASE_GATE.md](PRIVATE_RELEASE_GATE.md).
+## Repository status
+
+**PUBLIC** — full 12-world browser game, indexed 2,869-deed explorer and generated sandboxes, tests, and documentation. Run it locally with port **7777** or try the [live game](https://tobyworld-game.vercel.app/).
+
+Some earlier private-staging notices may remain visible in historical Git commits or old review branches; they are historical, not the current `main` documentation. Public visibility does not itself establish permission to distribute third-party assets.

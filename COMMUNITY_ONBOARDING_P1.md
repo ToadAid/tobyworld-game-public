@@ -33,4 +33,4 @@ Recorded on 2026-10-19:
 - Static UI contracts cover dialog semantics, focus trapping and restoration, safe external-link attributes, credits duplication, disclaimer copy, production metadata, and the `v53` cache bump.
 - Existing progress migration tests pass with the save key and version unchanged.
 
-The connected browser surface was unavailable during implementation, so no screenshot, rendered viewport, keyboard walkthrough, fullscreen interaction, or production visual verification is claimed yet. Physical-device testing is also not claimed. These remain release gates before production promotion.
+The connected browser surface was unavailable during implementation, so no screenshot, rendered viewport, keyboard walkthrough, fullscreen interaction, or production visual verification is claimed yet. Physical-device testing is also not claimed. Those QA activities were not performed in the dated 2026-10-19 implementation record; this historical note does not describe current repository visibility.
