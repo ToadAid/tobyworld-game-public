@@ -2,7 +2,7 @@
 
 Audit date: 2026-10-19
 
-Status: release candidate awaiting human approval and final browser/publication checks
+Status: privately staged release candidate awaiting human approval and final browser/publication checks
 
 ## Scope and architecture
 
@@ -15,8 +15,8 @@ The clean export process copies only files named in an allowlist. It excludes th
 - No package dependencies or install scripts are present.
 - Runtime URL inspection finds only three user-initiated community links; no automatic third-party fetch is implemented.
 - The app has no wallet, authentication, analytics, ads, remote font, IPFS gateway, API key, or private-network dependency.
-- Repository-content and history secret scanning must still be rerun on the final exported snapshot immediately before publication.
-- Private vulnerability reporting and branch protection must be enabled and verified on the future public repository before announcement.
+- Repository-content and history secret scanning passed on the final private staging snapshot and must be rerun immediately before publication.
+- GitHub branch protection and rulesets are unavailable while this user-owned repository remains private on its current plan. Private vulnerability reporting is available only after publication. These controls must be enabled and verified after the required plan/visibility boundary and before announcement.
 
 ## Rights decision
 
@@ -36,6 +36,7 @@ The following checks were run against the candidate and its allowlist export. Do
 - [ ] title, sample-world play, objective completion, save/reload, audio, keyboard, touch emulation, fullscreen, community links, PWA assets, console, and network inspection
 - [ ] physical-device testing (optional limitation, must be reported truthfully)
 - [x] final clean-export targeted secret/path/rights scan (no high-confidence credential or personal-machine path match; only documented community/local/W3C URLs found)
+- [x] authenticated fresh clone from the private staging repository; clean-edition checks, tests, sample audit, whitespace check, and manifest verification passed
 - [ ] unauthenticated clone from the approved public URL (publication-stage check)
 
 The clean export includes a generated manifest, and every listed file verified. The source-repository review package records the final file count, byte count, and manifest digest. Its only raster image is the cleared share preview rendered directly from the included hand-authored SVG. No symlink, nested `.git`, or generated dependency directory is present.
@@ -49,7 +50,7 @@ Interactive browser QA remains pending because the configured browser-control se
 ## Known publication blockers
 
 - Human approval of the MIT scope and included-material ownership is pending.
-- No public repository has been authorized or created.
-- A working public clone URL therefore does not exist yet.
-- The future repository security settings cannot be verified before creation.
+- The staging repository exists but remains private by design; no public release or unauthenticated clone claim is made.
+- Branch protection, pull-request enforcement, force-push/deletion blocking, secret scanning, and push protection are not active on the current private-plan repository. They require a supported plan or verification immediately after approved publication.
+- Private vulnerability reporting cannot be enabled until the repository is public; `SECURITY.md` provides the interim private-contact policy.
 - Interactive browser acceptance and an actual in-browser screenshot remain pending; a cleared 1200×630 share preview is prepared.
