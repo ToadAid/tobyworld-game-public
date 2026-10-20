@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tobyworld: Paths of Patience</title>
+  <desc id="desc">A ToadAid-created abstract preview with a winding path, pond, stars, and welcoming project text.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a2b"/>
+      <stop offset="0.55" stop-color="#123a55"/>
+      <stop offset="1" stop-color="#246b68"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#80d97d"/>
+      <stop offset="1" stop-color="#28664d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#sky)"/>
+  <circle cx="1030" cy="108" r="54" fill="#ffdc78" opacity=".92"/>
+  <g fill="#d9ffff" opacity=".75">
+    <circle cx="92" cy="92" r="3"/><circle cx="166" cy="146" r="5"/><circle cx="340" cy="80" r="4"/>
+    <circle cx="812" cy="94" r="4"/><circle cx="920" cy="176" r="3"/><circle cx="1100" cy="216" r="5"/>
+  </g>
+  <path d="M0 468C164 376 298 422 435 382c154-45 271-8 400 28 136 38 246 8 365-46v266H0z" fill="url(#land)"/>
+  <path d="M72 630c96-118 226-86 316-174 84-82 24-158 140-203 110-43 178 43 292-35" fill="none" stroke="#f1e5a7" stroke-width="54" stroke-linecap="round" opacity=".92"/>
+  <ellipse cx="937" cy="486" rx="174" ry="76" fill="#58c5d1" opacity=".88"/>
+  <ellipse cx="937" cy="486" rx="126" ry="44" fill="none" stroke="#baf5e8" stroke-width="8" opacity=".74"/>
+  <g font-family="Trebuchet MS, Arial, sans-serif" fill="#f7fff2">
+    <text x="72" y="110" fill="#8ce6f4" font-size="25" font-weight="700" letter-spacing="7">TOBYWORLD</text>
+    <text x="72" y="202" font-size="76" font-weight="900" letter-spacing="-3">PATHS OF</text>
+    <text x="72" y="282" fill="#ffd66e" font-size="88" font-weight="900" letter-spacing="-4">PATIENCE</text>
+    <text x="76" y="332" font-size="24" font-weight="700">A wallet-free community game · twelve lands · 2,869 doors</text>
+    <text x="76" y="580" fill="#d9eff0" font-size="22" font-weight="700">Built by ToadAid, for the Toadgang community. 🐸</text>
+  </g>
+</svg>
