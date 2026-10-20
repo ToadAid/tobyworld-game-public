@@ -1,6 +1,16 @@
-# Tobyworld: Paths of Patience — Full Game
+# 🐸 Tobyworld: Paths of Patience
 
 **Built by ToadAid, for the Toadgang community.**
+
+Made with love for the lore, the lands, and every frog who finds the pond. 🌱
+
+*Paths of Patience* is a free, wallet-free maze adventure through twelve Lore Land worlds. Guide Toby, tend what grows, learn when to yield, and open a gentle path into the Tobyworld community.
+
+[Play the live game](https://tobyworld-game.vercel.app/) · [Join Toadgang](https://t.me/toadgang) · [Explore Tobyworld](https://tobyworld.app/) · [Follow Toadgod](https://x.com/toadgod1017)
+
+![A text-and-shape preview for Tobyworld: Paths of Patience](docs/game-preview.svg)
+
+> This is a ToadAid-created community game adaptation. It is not a claim of official endorsement by Tobyworld or Toadgod.
 
 This repository contains the **real full-game browser runtime**, including the
 12-world campaign, Lore Land explorer, and production game assets. It is
@@ -24,10 +34,6 @@ Port **7777** is a suggested local test port, not a production setting.
 If it is occupied, select another unused port; do not stop unrelated services.
 
 ## Explore the real game
-
-![Abstract Paths of Patience project preview](docs/game-preview.svg)
-
-*Paths of Patience* is a free, wallet-free maze adventure through twelve Lore Land worlds. Guide Toby, practice **Patience** and **Yield**, and discover the wider pond. This is a ToadAid-created community adaptation; it does **not** claim official endorsement from Tobyworld or Toadgod.
 
 - **12-world campaign** with local saves, objectives, scores and unlocks.
 - **2,869 canonical Lore Land Deeds** indexed for lookup, plus deterministic sandbox worlds built from each deed's five signs.
