@@ -1,111 +1,330 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#132b2d">
-  <meta name="description" content="A permission-cleared, open-source sample of the Paths of Patience gameplay engine by ToadAid.">
-  <meta property="og:title" content="Paths of Patience — Open Source Sample">
-  <meta property="og:description" content="Three original landscapes. Patience, Yield, and a path anyone can study.">
-  <meta property="og:image" content="docs/preview.png">
-  <meta property="og:type" content="website">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="docs/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <title>Paths of Patience — Open Source Sample</title>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to game</a>
-  <main id="main" class="shell">
-    <section id="title-screen" class="title-screen" aria-labelledby="game-title">
-      <div class="title-art" aria-hidden="true">
-        <span class="moon"></span><span class="hill hill-one"></span><span class="hill hill-two"></span>
-        <span class="river"></span><span class="firefly f1"></span><span class="firefly f2"></span><span class="firefly f3"></span>
-      </div>
-      <div class="title-copy">
-        <p class="eyebrow">TOADAID OPEN-SOURCE SAMPLE</p>
-        <h1 id="game-title">Paths of Patience</h1>
-        <p class="lede">Cross three original imagined landscapes. Gather light, tend what grows, and learn when to yield.</p>
-        <div class="title-actions">
-          <button id="continue-button" class="button primary" type="button">Begin the path</button>
-          <button id="community-button" class="button quiet" type="button">Discover the pond</button>
-        </div>
-        <p class="edition-note">A playable, permission-cleared code edition. The full Tobyworld game remains a separate community adaptation.</p>
-      </div>
-      <div id="world-list" class="world-list" aria-label="Sample worlds"></div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#123a55" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Tobyworld" />
+    <meta name="description" content="Enter Tobyworld: Paths of Patience, a free community-made Lore Land adventure built by ToadAid for the Toadgang." />
+    <link rel="canonical" href="https://tobyworld-game.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tobyworld: Paths of Patience" />
+    <meta property="og:title" content="Tobyworld: Paths of Patience" />
+    <meta property="og:description" content="Tend the lands, discover the lore, and find your path into the pond in this ToadAid-created community game." />
+    <meta property="og:url" content="https://tobyworld-game.vercel.app/" />
+    <meta property="og:image" content="https://tobyworld-game.vercel.app/assets/tobyworld-trio.png" />
+    <meta property="og:image:width" content="801" />
+    <meta property="og:image:height" content="444" />
+    <meta property="og:image:alt" content="Taboshi, Toby, and Patience together in Tobyworld" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tobyworld: Paths of Patience" />
+    <meta name="twitter:description" content="A welcoming, wallet-free path into Tobyworld lore and the Toadgang community." />
+    <meta name="twitter:image" content="https://tobyworld-game.vercel.app/assets/tobyworld-trio.png" />
+    <meta name="twitter:image:alt" content="Taboshi, Toby, and Patience together in Tobyworld" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tobyworld: Paths of Patience</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#game-canvas">Skip to the Lore Land</a>
 
-    <section id="game-screen" class="game-screen" hidden aria-label="Game">
-      <header class="game-header">
-        <div><p class="eyebrow">SAMPLE WORLD <span id="world-count"></span></p><h2 id="world-name"></h2></div>
-        <div class="header-actions">
-          <button id="sound-button" class="icon-button" type="button" aria-pressed="true" aria-label="Mute sound">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5-1.5a6 6 0 0 1 0 9M15 10a3 3 0 0 1 0 4"/></svg>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="identity">
+          <span class="identity__sigil" aria-hidden="true"></span>
+          <div>
+            <p>TOBYWORLD</p>
+            <h1>PATHS OF PATIENCE</h1>
+          </div>
+        </div>
+        <div class="topbar__actions">
+          <button id="haptics-button" class="icon-button" type="button" aria-label="Turn haptic feedback off" aria-pressed="true">
+            <svg class="icon icon--haptics" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="5" width="8" height="14" rx="2" /><path d="M5 9v6M19 9v6M2.5 10.5v3M21.5 10.5v3" /></svg>
+            <svg class="icon icon--haptics-off" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="5" width="8" height="14" rx="2" /><path d="m4 4 16 16" /></svg>
           </button>
-          <button id="fullscreen-button" class="icon-button" type="button" aria-label="Enter fullscreen">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+          <button id="sound-button" class="icon-button" type="button" aria-label="Turn sound off" aria-pressed="true">
+            <svg class="icon icon--sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5-.5a5 5 0 0 1 0 7M19 6a9 9 0 0 1 0 12" /></svg>
+            <svg class="icon icon--muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12 1 5 5m0-5-5 5" /></svg>
           </button>
-          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+          <button id="fullscreen-button" class="icon-button" type="button" aria-label="Enter fullscreen" aria-pressed="false">
+            <svg class="icon icon--fullscreen-enter" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5" /></svg>
+            <svg class="icon icon--fullscreen-exit" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v5H3M16 3v5h5M21 16h-5v5M3 16h5v5" /></svg>
+          </button>
+          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game" aria-pressed="false">
+            <svg class="icon icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" /></svg>
+            <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z" /></svg>
           </button>
         </div>
       </header>
 
-      <div class="play-layout">
-        <div class="canvas-wrap">
-          <canvas id="game-canvas" width="900" height="540" tabindex="0" role="img" aria-label="Interactive garden maze"></canvas>
-          <div id="toast" class="toast" role="status" aria-live="polite"></div>
-        </div>
-        <aside class="objectives" aria-label="Objectives">
-          <p id="world-subtitle" class="world-subtitle"></p>
+      <section class="game-frame" aria-label="Lore Land Deed 715 game">
+        <canvas
+          id="game-canvas"
+          width="1280"
+          height="720"
+          tabindex="0"
+          aria-label="A maze on Lore Land Deed 715. Use arrow keys or WASD to guide Toby. Press Q for Yield and hold Space for Patience."
+        ></canvas>
+
+        <section id="title-screen" class="title-screen" aria-labelledby="title-heading">
+          <img id="title-art" src="assets/tobyworld-trio.png" alt="Taboshi, Toby, and Patience together in Tobyworld" />
+          <div class="title-screen__scrim" aria-hidden="true"></div>
+          <div class="title-card">
+            <p class="kicker">THE WORLD IS SLOWLY AWAKENING</p>
+            <h2 id="title-heading">PATHS OF<br /><span>PATIENCE</span></h2>
+            <p id="stage-intro">Study the paths. Tend what grows. Awaken each Core and cross into the next Lore Land.</p>
+            <div class="stage-credit">PLAYABLE WORLD · IMAGINED BY TOADAID</div>
+            <div id="deed-select" class="deed-select">
+              <p id="deed-select-label">CHOOSE AWAKENED DEED</p>
+              <div class="deed-select__buttons" role="group" aria-label="Choose a Lore Land deed">
+                <button type="button" data-stage="0715" aria-pressed="true"><strong>#715</strong><span>Waystones</span></button>
+                <button type="button" data-stage="0716" aria-pressed="false"><strong>#716</strong><span>Frostveil</span></button>
+                <button type="button" data-stage="0717" aria-pressed="false"><strong>#717</strong><span>Stillwater</span></button>
+                <button type="button" data-stage="0718" aria-pressed="false"><strong>#718</strong><span>Sunfield</span></button>
+                <button type="button" data-stage="0340" aria-pressed="false"><strong>#340</strong><span>Sporegrove</span></button>
+                <button type="button" data-stage="0378" aria-pressed="false"><strong>#378</strong><span>Emberreach</span></button>
+                <button type="button" data-stage="0118" aria-pressed="false"><strong>#118</strong><span>Mossmere</span></button>
+                <button type="button" data-stage="0182" aria-pressed="false"><strong>#182</strong><span>Meadow</span></button>
+                <button type="button" data-stage="0887" aria-pressed="false"><strong>#887</strong><span>Frost Map</span></button>
+                <button type="button" data-stage="1091" aria-pressed="false"><strong>#1091</strong><span>Key Below</span></button>
+                <button type="button" data-stage="0969" aria-pressed="false"><strong>#969</strong><span>Pond Threshold</span></button>
+                <button type="button" data-stage="0094" aria-pressed="false"><strong>#94</strong><span>Pond Remembers</span></button>
+              </div>
+            </div>
+            <button id="start-button" class="primary-button" type="button">ENTER DEED #715</button>
+            <button id="how-button" class="secondary-button" type="button" aria-expanded="false" aria-controls="how-panel">HOW TO TEND</button>
+            <button id="deed-wanderer-button" class="secondary-button deed-wanderer-button" type="button" aria-expanded="false" aria-controls="deed-wanderer-panel">EXPLORE 2,869 DEEDS</button>
+            <button id="community-button" class="secondary-button community-button" type="button" aria-expanded="false" aria-controls="community-panel">DISCOVER THE POND</button>
+            <button id="about-button" class="secondary-button about-button" type="button" aria-expanded="false" aria-controls="about-panel">ABOUT &amp; PRIVACY</button>
+          </div>
+          <div id="deed-card" class="deed-card" aria-label="Canonical signs for Lore Land Deed 715">
+            <img id="deed-card-art" class="deed-card__art" src="assets/deed-thumbnails/0715.webp" alt="Original canonical artwork for Lore Land Deed 715" width="280" height="104" />
+            <p>CANONICAL SOURCE</p>
+            <strong id="deed-number">#715</strong>
+            <dl>
+              <div><dt>BACKGROUND</dt><dd data-sign="Background">Verdant Veil</dd></div>
+              <div><dt>LAND</dt><dd data-sign="Land">Waystones</dd></div>
+              <div><dt>CORE</dt><dd data-sign="Core">Rootbound</dd></div>
+              <div><dt>RELIC</dt><dd data-sign="Relic">Wayfinder Compass</dd></div>
+              <div><dt>KEEPER</dt><dd data-sign="Keeper">Satoby</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section id="how-panel" class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="how-heading" hidden>
+          <p class="kicker">STUDY THE LAND</p>
+          <h2 id="how-heading">HOW TO TEND</h2>
           <ul>
-            <li id="lights-status"><span aria-hidden="true" class="marker light-marker"></span><span></span></li>
-            <li id="sprouts-status"><span aria-hidden="true" class="marker sprout-marker"></span><span></span></li>
-            <li id="beacon-status"><span aria-hidden="true" class="marker beacon-marker"></span><span></span></li>
-            <li id="gate-status"><span aria-hidden="true" class="marker gate-marker"></span><span></span></li>
+            <li><strong>Move</strong> with swipes, or hold the directional pad, arrow keys, or WASD. Release to stop on the next tile.</li>
+            <li><strong>Remain still</strong> on every sprout and hold Patience to tend it.</li>
+            <li><strong>Stop beside the Keeper</strong> and hold Patience to receive the land's optional blessing.</li>
+            <li><strong>At the bottom-center gate, use Yield</strong> and move across while the leaves are open.</li>
+            <li><strong>Watch living paths breathe</strong> open and closed; holding Patience slows their cycle.</li>
+            <li><strong>Cross ember paths on the cool tide</strong>; Patience slows the heat, and the Ancient Rune cools it forever.</li>
+            <li><strong>When the Kiribako wakes</strong>, revisit its numbered memory echoes in order.</li>
+            <li><strong>Find the Gate Key</strong> to permanently open marked shortcut doors across the Meadow.</li>
+            <li><strong>Recover the Lore Map</strong> to chart a persistent route toward unfinished objectives.</li>
+            <li><strong>In the veiled Stillwater</strong>, listen to Hush, then stop completely and hold Patience to reveal submerged paths.</li>
+            <li><strong>At the Pond threshold</strong>, stop beside a ring and hold Patience to open it briefly—or listen to Satoby to be welcomed permanently.</li>
+            <li><strong>In the final Pond</strong>, find the Wayfinder, then stop on each Door Echo and hold Patience until all three answer.</li>
+            <li><strong>Find each deed's Relic</strong>, gather its Lore Lights, and return to the Core.</li>
+            <li><strong>Harvest the purple Taboshi Bloom</strong> to eat ghosts for seven seconds; eaten ghosts return far from Toby. This is a Toadaid-adapted game mechanic.</li>
+            <li><strong>Use a controller</strong> with the D-pad or left stick to move, A to hold Patience or confirm, B to Yield, and Menu/Start to pause. In menus, use any direction to move focus and A to choose.</li>
           </ul>
-          <p class="hint">Move with arrow keys or WASD. Hold <kbd>Space</kbd> beside a sprout. Press <kbd>Q</kbd> beside the gate.</p>
-        </aside>
-      </div>
+          <button id="close-how-button" class="primary-button" type="button">I WILL STUDY</button>
+        </section>
 
-      <div class="touch-controls" aria-label="Touch game controls">
-        <div class="dpad">
-          <button data-move="0,-1" class="control up" type="button" aria-label="Move up"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
-          <button data-move="-1,0" class="control left" type="button" aria-label="Move left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
-          <button data-move="0,1" class="control down" type="button" aria-label="Move down"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-          <button data-move="1,0" class="control right" type="button" aria-label="Move right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+        <section id="deed-wanderer-panel" class="modal-panel deed-wanderer-panel" role="dialog" aria-modal="true" aria-labelledby="deed-wanderer-heading" hidden>
+          <p class="kicker">EVERY DEED IS A DOOR</p>
+          <h2 id="deed-wanderer-heading">DEED ARCHIVE</h2>
+          <p class="deed-wanderer-intro">Look up any deed in the local canonical archive and preview the deterministic Toadaid sandbox recipe derived from its five signs.</p>
+          <form id="deed-lookup-form" class="deed-lookup-form" novalidate>
+            <label for="deed-lookup-input">DEED NUMBER</label>
+            <div class="deed-lookup-row">
+              <input id="deed-lookup-input" name="deed" type="number" inputmode="numeric" min="1" max="4000" step="1" placeholder="94" aria-describedby="deed-lookup-help deed-lookup-status" required />
+              <button id="deed-lookup-submit" class="primary-button" type="submit">FIND DOOR</button>
+            </div>
+            <p id="deed-lookup-help" class="deed-lookup-help">Canonical archive: 2,869 deeds. Numbers absent from the archive will be reported clearly.</p>
+            <p id="deed-lookup-status" class="deed-lookup-status" role="status" aria-live="polite"></p>
+          </form>
+          <article id="deed-lookup-result" class="deed-lookup-result" hidden>
+            <figure class="deed-lookup-visual">
+              <div class="deed-lookup-visual__frame">
+                <img id="deed-lookup-image" alt="" width="240" height="240" decoding="async" hidden />
+              </div>
+              <figcaption id="deed-lookup-visual-status">Preparing canonical visual…</figcaption>
+            </figure>
+            <div class="deed-lookup-details">
+              <p>CANONICAL ARCHIVE</p>
+              <strong id="deed-lookup-number">#—</strong>
+              <dl>
+                <div><dt>BACKGROUND</dt><dd data-archive-sign="Background">—</dd></div>
+                <div><dt>LAND</dt><dd data-archive-sign="Land">—</dd></div>
+                <div><dt>CORE</dt><dd data-archive-sign="Core">—</dd></div>
+                <div><dt>RELIC</dt><dd data-archive-sign="Relic">—</dd></div>
+                <div><dt>KEEPER</dt><dd data-archive-sign="Keeper">—</dd></div>
+              </dl>
+              <p class="deed-lookup-boundary">Canonical signs and metadata visual only · no generated utility or playable world is claimed.</p>
+            </div>
+            <aside id="deed-sandbox-recipe" class="deed-sandbox-recipe" aria-labelledby="deed-sandbox-heading" hidden>
+              <div class="deed-sandbox-recipe__heading">
+                <div>
+                  <p>TOADAID-GENERATED TREATMENT</p>
+                  <h3 id="deed-sandbox-heading">SANDBOX RECIPE</h3>
+                </div>
+                <span id="deed-sandbox-seed">RECIPE —</span>
+              </div>
+              <dl>
+                <div><dt>LAYOUT</dt><dd data-sandbox-rule="Layout">—</dd></div>
+                <div><dt>TRAVERSAL</dt><dd data-sandbox-rule="Traversal">—</dd></div>
+                <div><dt>ATMOSPHERE</dt><dd data-sandbox-rule="Atmosphere">—</dd></div>
+                <div><dt>AUDIO</dt><dd data-sandbox-rule="Audio">—</dd></div>
+                <div><dt>CORE OBJECTIVE</dt><dd data-sandbox-rule="Objective">—</dd></div>
+                <div><dt>RELIC RULE</dt><dd data-sandbox-rule="Relic">—</dd></div>
+                <div><dt>KEEPER RULE</dt><dd data-sandbox-rule="Keeper">—</dd></div>
+              </dl>
+              <p>This deterministic recipe is a Toadaid adaptation, not canonical lore. Sandbox play is experimental and never changes campaign progress.</p>
+            </aside>
+            <button id="enter-deed-sandbox-button" class="primary-button deed-sandbox-enter" type="button" disabled>ENTER GENERATED SANDBOX</button>
+          </article>
+          <button id="close-deed-wanderer-button" class="secondary-button deed-wanderer-close" type="button">RETURN TO CAMPAIGN</button>
+        </section>
+
+        <section id="community-panel" class="modal-panel community-panel" role="dialog" aria-modal="true" aria-labelledby="community-heading" aria-describedby="community-intro community-boundary" hidden>
+          <p class="kicker">EVERY FROG DESERVES A PATH</p>
+          <h2 id="community-heading">DISCOVER THE POND</h2>
+          <p id="community-intro" class="community-intro">🐸 Built by ToadAid, for the Toadgang community.<br />Made with love for the lore, the lands, and every frog who finds the pond. 🌱</p>
+          <nav class="community-links" aria-label="Tobyworld community destinations">
+            <a href="https://t.me/toadgang" target="_blank" rel="noopener noreferrer external" aria-label="Join Toadgang on Telegram (opens in a new tab)">
+              <strong>JOIN TOADGANG <span aria-hidden="true">↗</span></strong>
+              <span>Meet the community and discover the lore.</span>
+            </a>
+            <a href="https://tobyworld.app" target="_blank" rel="noopener noreferrer external" aria-label="Explore Tobyworld (opens in a new tab)">
+              <strong>EXPLORE TOBYWORLD <span aria-hidden="true">↗</span></strong>
+              <span>Discover the wider Tobyworld ecosystem.</span>
+            </a>
+            <a href="https://x.com/toadgod1017" target="_blank" rel="noopener noreferrer external" aria-label="Follow Toadgod on X (opens in a new tab)">
+              <strong>FOLLOW TOADGOD <span aria-hidden="true">↗</span></strong>
+              <span>Read Toadgod's posts and explore the source of the lore.</span>
+            </a>
+          </nav>
+          <p id="community-boundary" class="community-boundary">This is a ToadAid-created community game adaptation. It is not a claim of official endorsement by Tobyworld or Toadgod. No wallet, login, or token action is required.</p>
+          <button id="close-community-button" class="primary-button community-close" type="button">RETURN TO THE DOOR</button>
+        </section>
+
+        <section id="about-panel" class="modal-panel about-panel" role="dialog" aria-modal="true" aria-labelledby="about-heading" hidden>
+          <div class="about-panel__header">
+            <div>
+              <p class="kicker">A CLEAR BOUNDARY</p>
+              <h2 id="about-heading">ABOUT THIS WORLD</h2>
+            </div>
+            <button id="close-about-button" class="about-panel__dismiss" type="button" data-close-about aria-label="Close About and Privacy">CLOSE</button>
+          </div>
+          <p class="about-intro">Tobyworld: Paths of Patience is a Toadaid-created game adaptation built around canonical Lore Land Deed references.</p>
+          <div class="about-grid">
+            <section aria-labelledby="about-canon-heading">
+              <h3 id="about-canon-heading">CANON &amp; ADAPTATION</h3>
+              <p>Deed numbers, five signs, canonical metadata, and canonical artwork are presented as source references. Playable worlds, layouts, objectives, dialogue, music, and generated sandbox rules are Toadaid adaptations—not claims about canonical lore or deed utility.</p>
+            </section>
+            <section aria-labelledby="about-privacy-heading">
+              <h3 id="about-privacy-heading">PRIVACY</h3>
+              <p>Campaign progress, best scores, control introduction, and haptic preference stay in this browser's local storage. There is no account, wallet connection, analytics, advertising tracker, or automatic social posting.</p>
+              <p>Archive visuals load locally first. If a local image is unavailable, the game may request an IPFS gateway fallback, which receives ordinary web request information such as an IP address. Visited assets may be cached on this device for offline play.</p>
+            </section>
+            <section aria-labelledby="about-sharing-heading">
+              <h3 id="about-sharing-heading">SHARING</h3>
+              <p>Journey Cards and social sharing are future experiments. If added, cards will be created locally and sharing will require an explicit player action; nothing will be posted automatically.</p>
+            </section>
+            <section aria-labelledby="about-credits-heading">
+              <h3 id="about-credits-heading">CREDITS</h3>
+              <p>Game design, playable treatments, code, Keeper dialogue, and generative audio: Toadaid. Canonical Lore Land Deed records and imagery remain visibly separated from adapted game material.</p>
+            </section>
+            <section class="about-community" aria-labelledby="about-community-heading">
+              <h3 id="about-community-heading">COMMUNITY</h3>
+              <p>🐸 Built by ToadAid, for the Toadgang community. Made with love for the lore, the lands, and every frog who finds the pond. 🌱</p>
+              <p class="about-community-links"><a href="https://t.me/toadgang" target="_blank" rel="noopener noreferrer external" aria-label="Join Toadgang on Telegram (opens in a new tab)">Join Toadgang <span aria-hidden="true">↗</span></a><a href="https://tobyworld.app" target="_blank" rel="noopener noreferrer external" aria-label="Explore Tobyworld (opens in a new tab)">Explore Tobyworld <span aria-hidden="true">↗</span></a><a href="https://x.com/toadgod1017" target="_blank" rel="noopener noreferrer external" aria-label="Follow Toadgod on X (opens in a new tab)">Follow Toadgod <span aria-hidden="true">↗</span></a></p>
+              <p>This is a ToadAid-created community game adaptation, not a claim of official endorsement by Tobyworld or Toadgod.</p>
+            </section>
+          </div>
+          <button id="close-about-footer-button" class="primary-button about-close" type="button" data-close-about>RETURN TO THE DOOR</button>
+        </section>
+
+        <section id="pause-panel" class="modal-panel pause-panel" role="dialog" aria-modal="true" aria-labelledby="pause-heading" hidden>
+          <p class="kicker">THE PATH WAITS</p>
+          <h2 id="pause-heading">STILLNESS</h2>
+          <p>Your place in this deed is held.</p>
+          <section class="game-settings" aria-labelledby="game-settings-heading">
+            <h3 id="game-settings-heading">GAME SETTINGS</h3>
+            <div class="game-setting">
+              <span id="music-level-label">MUSIC</span>
+              <div class="setting-options" role="group" aria-labelledby="music-level-label">
+                <button type="button" data-audio-channel="music" data-audio-level="low" aria-pressed="false">LOW</button>
+                <button type="button" data-audio-channel="music" data-audio-level="medium" aria-pressed="false">MED</button>
+                <button type="button" data-audio-channel="music" data-audio-level="high" aria-pressed="true">HIGH</button>
+              </div>
+            </div>
+            <div class="game-setting">
+              <span id="effects-level-label">EFFECTS</span>
+              <div class="setting-options" role="group" aria-labelledby="effects-level-label">
+                <button type="button" data-audio-channel="effects" data-audio-level="low" aria-pressed="false">LOW</button>
+                <button type="button" data-audio-channel="effects" data-audio-level="medium" aria-pressed="false">MED</button>
+                <button type="button" data-audio-channel="effects" data-audio-level="high" aria-pressed="true">HIGH</button>
+              </div>
+            </div>
+            <div class="game-setting">
+              <span id="haptics-setting-label">HAPTICS</span>
+              <div class="setting-options setting-options--two" role="group" aria-labelledby="haptics-setting-label">
+                <button type="button" data-haptics-setting="off" aria-pressed="false">OFF</button>
+                <button type="button" data-haptics-setting="on" aria-pressed="true">ON</button>
+              </div>
+            </div>
+            <div class="game-setting">
+              <span id="visual-effects-label">VISUALS</span>
+              <div class="setting-options setting-options--two" role="group" aria-labelledby="visual-effects-label">
+                <button type="button" data-visual-effects="reduced" aria-pressed="false">REDUCED</button>
+                <button type="button" data-visual-effects="full" aria-pressed="true">FULL</button>
+              </div>
+            </div>
+          </section>
+          <div class="pause-actions">
+            <button id="resume-button" class="primary-button" type="button">RESUME</button>
+            <button id="restart-button" class="secondary-button" type="button">RESTART DEED</button>
+            <button id="quit-button" class="secondary-button pause-actions__quit" type="button">QUIT TO TITLE</button>
+          </div>
+          <p class="pause-shortcut"><span class="pause-shortcut__desktop">ESC · RESUME &nbsp;&nbsp; P · QUICK PAUSE</span><span class="pause-shortcut__touch">TAP RESUME OR ▶ TO CONTINUE</span></p>
+        </section>
+
+        <div id="announcement" class="announcement" role="status" aria-live="polite"></div>
+        <div id="sandbox-mode-badge" class="sandbox-mode-badge" hidden>GENERATED SANDBOX · NO CAMPAIGN SAVE</div>
+        <div id="live-status" class="sr-only" aria-live="polite"></div>
+      </section>
+
+      <section class="mobile-controls" aria-label="Touch controls">
+        <div class="dpad" aria-label="Movement pad" data-guide="MOVE">
+          <button class="touch-button dpad__up" type="button" data-direction="up" aria-label="Move up"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 7-7 7 7" /></svg></button>
+          <button class="touch-button dpad__left" type="button" data-direction="left" aria-label="Move left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg></button>
+          <button class="touch-button dpad__down" type="button" data-direction="down" aria-label="Move down"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7" /></svg></button>
+          <button class="touch-button dpad__right" type="button" data-direction="right" aria-label="Move right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg></button>
         </div>
-        <div class="action-controls">
-          <button id="patience-button" class="action patience" type="button"><span>Hold</span> Patience</button>
-          <button id="yield-button" class="action yield" type="button"><span>Use</span> Yield</button>
+        <div class="ability-controls">
+          <button id="patience-button" class="ability-button ability-button--patience" type="button" aria-label="Hold Patience to breathe or tend a sprout">
+            <span class="ability-button__sigil ability-button__sigil--triangle" aria-hidden="true"></span>
+            <span><strong>PATIENCE</strong><small>HOLD · BREATHE</small></span>
+          </button>
+          <button id="yield-button" class="ability-button ability-button--yield" type="button">
+            <span class="ability-button__sigil ability-button__sigil--leaf" aria-hidden="true"></span>
+            <span><strong>YIELD</strong><small>OPEN THE PATH</small></span>
+          </button>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <dialog id="community-dialog" class="panel-dialog" aria-labelledby="community-title">
-    <div class="dialog-header"><div><p class="eyebrow">COMMUNITY</p><h2 id="community-title">Discover the pond</h2></div><button class="dialog-close" data-close type="button" aria-label="Close community panel">Close</button></div>
-    <div class="dialog-scroll">
-      <blockquote>🐸 Built by ToadAid, for the Toadgang community.<br><br>Made with love for the lore, the lands, and every frog who finds the pond. 🌱</blockquote>
-      <p>This open-source sample uses original abstract landscapes and sample data. It is a ToadAid-created community project, not a claim of official endorsement by Tobyworld or Toadgod.</p>
-      <div class="community-links">
-        <a href="https://t.me/toadgang" target="_blank" rel="noopener noreferrer external"><strong>Join Toadgang</strong><span>Meet the community and discover the lore. Opens a new tab.</span></a>
-        <a href="https://tobyworld.app" target="_blank" rel="noopener noreferrer external"><strong>Explore Tobyworld</strong><span>Discover the wider Tobyworld ecosystem. Opens a new tab.</span></a>
-        <a href="https://x.com/toadgod1017" target="_blank" rel="noopener noreferrer external"><strong>Follow Toadgod</strong><span>Read Toadgod's posts and explore the source of the lore. Opens a new tab.</span></a>
-      </div>
-      <p class="motto">Every deed is a door. Every frog deserves a path.</p>
-    </div>
-  </dialog>
+      <footer class="game-footer">
+        <p id="footer-stage">DEED #715 · FIVE SIGNS · ONE LORE</p>
+        <p class="desktop-controls">KEYS: WASD / ARROWS · Q YIELD · SPACE PATIENCE · P PAUSE &nbsp;|&nbsp; CONTROLLER: STICK / D-PAD · A PATIENCE · B YIELD · MENU PAUSE</p>
+      </footer>
+    </main>
 
-  <dialog id="pause-dialog" class="panel-dialog pause-dialog" aria-labelledby="pause-title">
-    <div class="dialog-header"><div><p class="eyebrow">THE PATH IS QUIET</p><h2 id="pause-title">Paused</h2></div></div>
-    <div class="dialog-actions">
-      <button id="resume-button" class="button primary" type="button">Resume</button>
-      <button id="restart-button" class="button quiet" type="button">Restart world</button>
-      <button id="title-button" class="button quiet" type="button">Return to title</button>
-    </div>
-  </dialog>
-
-  <script type="module" src="app.js"></script>
-</body>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>

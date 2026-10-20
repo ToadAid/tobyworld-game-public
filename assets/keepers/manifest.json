@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "assetSet": "Tobyworld canonical Keeper masters",
+  "notes": "Transparent game-ready interpretations anchored to the existing Toby sprite and canonical Lore Land artwork. Canonical trait spelling must be preserved in code and UI.",
+  "keepers": {
+    "OG": {
+      "color": "blue",
+      "file": "keeper-og.png",
+      "dimensions": [1254, 1254],
+      "format": "PNG RGBA",
+      "canonicalReferenceDeed": "0182",
+      "sha256": "c2878e9a995d62f46730a8c650a0d65b0ad4cff5de83a37cfadad4b8931da21c"
+    },
+    "Hush": {
+      "color": "gray",
+      "file": "keeper-hush.png",
+      "dimensions": [1254, 1254],
+      "format": "PNG RGBA",
+      "canonicalReferenceDeed": "0191",
+      "sha256": "20725078dfe138cda0ef56dbc81d7fa69e6e2f9e33aa819bd1abcbc63e3d9bf7"
+    },
+    "Satoby": {
+      "color": "gold",
+      "file": "keeper-satoby.png",
+      "dimensions": [1254, 1254],
+      "format": "PNG RGBA",
+      "canonicalReferenceDeed": "0716",
+      "sha256": "37bbf70b1efb20b7faa1e09498ef5bd6a3a3ff62b0fd2a8c220670d257fbbb33"
+    }
+  }
+}

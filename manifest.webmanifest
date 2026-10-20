@@ -1,10 +1,25 @@
 {
-  "name": "Paths of Patience — Open Source Sample",
-  "short_name": "Patience Paths",
-  "description": "A permission-cleared, open-source sample game by ToadAid.",
+  "name": "Tobyworld: Paths of Patience",
+  "short_name": "Tobyworld",
+  "description": "Tend a canonical Lore Land with Toby, Taboshi, and Patience.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#071918",
-  "theme_color": "#132b2d",
-  "icons": [{ "src": "docs/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#071a2b",
+  "theme_color": "#123a55",
+  "icons": [
+    {
+      "src": "assets/toby.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/deed-0715.png",
+      "sizes": "1536x1536",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
