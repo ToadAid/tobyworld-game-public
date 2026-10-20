@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#132b2d">
+  <meta name="description" content="A permission-cleared, open-source sample of the Paths of Patience gameplay engine by ToadAid.">
+  <meta property="og:title" content="Paths of Patience — Open Source Sample">
+  <meta property="og:description" content="Three original landscapes. Patience, Yield, and a path anyone can study.">
+  <meta property="og:image" content="docs/preview.png">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="docs/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Paths of Patience — Open Source Sample</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to game</a>
+  <main id="main" class="shell">
+    <section id="title-screen" class="title-screen" aria-labelledby="game-title">
+      <div class="title-art" aria-hidden="true">
+        <span class="moon"></span><span class="hill hill-one"></span><span class="hill hill-two"></span>
+        <span class="river"></span><span class="firefly f1"></span><span class="firefly f2"></span><span class="firefly f3"></span>
+      </div>
+      <div class="title-copy">
+        <p class="eyebrow">TOADAID OPEN-SOURCE SAMPLE</p>
+        <h1 id="game-title">Paths of Patience</h1>
+        <p class="lede">Cross three original imagined landscapes. Gather light, tend what grows, and learn when to yield.</p>
+        <div class="title-actions">
+          <button id="continue-button" class="button primary" type="button">Begin the path</button>
+          <button id="community-button" class="button quiet" type="button">Discover the pond</button>
+        </div>
+        <p class="edition-note">A playable, permission-cleared code edition. The full Tobyworld game remains a separate community adaptation.</p>
+      </div>
+      <div id="world-list" class="world-list" aria-label="Sample worlds"></div>
+    </section>
+
+    <section id="game-screen" class="game-screen" hidden aria-label="Game">
+      <header class="game-header">
+        <div><p class="eyebrow">SAMPLE WORLD <span id="world-count"></span></p><h2 id="world-name"></h2></div>
+        <div class="header-actions">
+          <button id="sound-button" class="icon-button" type="button" aria-pressed="true" aria-label="Mute sound">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5-1.5a6 6 0 0 1 0 9M15 10a3 3 0 0 1 0 4"/></svg>
+          </button>
+          <button id="fullscreen-button" class="icon-button" type="button" aria-label="Enter fullscreen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+          </button>
+          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="play-layout">
+        <div class="canvas-wrap">
+          <canvas id="game-canvas" width="900" height="540" tabindex="0" role="img" aria-label="Interactive garden maze"></canvas>
+          <div id="toast" class="toast" role="status" aria-live="polite"></div>
+        </div>
+        <aside class="objectives" aria-label="Objectives">
+          <p id="world-subtitle" class="world-subtitle"></p>
+          <ul>
+            <li id="lights-status"><span aria-hidden="true" class="marker light-marker"></span><span></span></li>
+            <li id="sprouts-status"><span aria-hidden="true" class="marker sprout-marker"></span><span></span></li>
+            <li id="beacon-status"><span aria-hidden="true" class="marker beacon-marker"></span><span></span></li>
+            <li id="gate-status"><span aria-hidden="true" class="marker gate-marker"></span><span></span></li>
+          </ul>
+          <p class="hint">Move with arrow keys or WASD. Hold <kbd>Space</kbd> beside a sprout. Press <kbd>Q</kbd> beside the gate.</p>
+        </aside>
+      </div>
+
+      <div class="touch-controls" aria-label="Touch game controls">
+        <div class="dpad">
+          <button data-move="0,-1" class="control up" type="button" aria-label="Move up"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
+          <button data-move="-1,0" class="control left" type="button" aria-label="Move left"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+          <button data-move="0,1" class="control down" type="button" aria-label="Move down"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <button data-move="1,0" class="control right" type="button" aria-label="Move right"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+        <div class="action-controls">
+          <button id="patience-button" class="action patience" type="button"><span>Hold</span> Patience</button>
+          <button id="yield-button" class="action yield" type="button"><span>Use</span> Yield</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="community-dialog" class="panel-dialog" aria-labelledby="community-title">
+    <div class="dialog-header"><div><p class="eyebrow">COMMUNITY</p><h2 id="community-title">Discover the pond</h2></div><button class="dialog-close" data-close type="button" aria-label="Close community panel">Close</button></div>
+    <div class="dialog-scroll">
+      <blockquote>🐸 Built by ToadAid, for the Toadgang community.<br><br>Made with love for the lore, the lands, and every frog who finds the pond. 🌱</blockquote>
+      <p>This open-source sample uses original abstract landscapes and sample data. It is a ToadAid-created community project, not a claim of official endorsement by Tobyworld or Toadgod.</p>
+      <div class="community-links">
+        <a href="https://t.me/toadgang" target="_blank" rel="noopener noreferrer external"><strong>Join Toadgang</strong><span>Meet the community and discover the lore. Opens a new tab.</span></a>
+        <a href="https://tobyworld.app" target="_blank" rel="noopener noreferrer external"><strong>Explore Tobyworld</strong><span>Discover the wider Tobyworld ecosystem. Opens a new tab.</span></a>
+        <a href="https://x.com/toadgod1017" target="_blank" rel="noopener noreferrer external"><strong>Follow Toadgod</strong><span>Read Toadgod's posts and explore the source of the lore. Opens a new tab.</span></a>
+      </div>
+      <p class="motto">Every deed is a door. Every frog deserves a path.</p>
+    </div>
+  </dialog>
+
+  <dialog id="pause-dialog" class="panel-dialog pause-dialog" aria-labelledby="pause-title">
+    <div class="dialog-header"><div><p class="eyebrow">THE PATH IS QUIET</p><h2 id="pause-title">Paused</h2></div></div>
+    <div class="dialog-actions">
+      <button id="resume-button" class="button primary" type="button">Resume</button>
+      <button id="restart-button" class="button quiet" type="button">Restart world</button>
+      <button id="title-button" class="button quiet" type="button">Return to title</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

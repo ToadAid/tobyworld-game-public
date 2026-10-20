@@ -1,0 +1,10 @@
+{
+  "name": "Paths of Patience — Open Source Sample",
+  "short_name": "Patience Paths",
+  "description": "A permission-cleared, open-source sample game by ToadAid.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071918",
+  "theme_color": "#132b2d",
+  "icons": [{ "src": "docs/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
